@@ -1,0 +1,20 @@
+{
+  "name": "csv_report_generator",
+  "version": "1.0.0",
+  "description": "CSV report generator server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jluton/csvreportgenerator.git"
+  },
+  "author": "Jake Luton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jluton/csvreportgenerator/issues"
+  },
+  "homepage": "https://github.com/jluton/csvreportgenerator#readme"
+}
