@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jluton/csvreportgenerator/issues"
   },
-  "homepage": "https://github.com/jluton/csvreportgenerator#readme"
+  "homepage": "https://github.com/jluton/csvreportgenerator#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
