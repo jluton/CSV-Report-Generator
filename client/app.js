@@ -15,7 +15,7 @@ const send = function (text) {
   $.ajax({
     method: 'GET',
     url: '/report',
-    data: { data: text },
+    data: text,
     contentType: 'application/json',
     success: (res) => {
       console.log('success!: ', res);
