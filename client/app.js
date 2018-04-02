@@ -1,21 +1,21 @@
 const server = 'localhost:3000';
 
 const init = function () {
-  $('#inputForm').submit((e) => {
-    const text = $("#inputBox").val();
-    $("#inputBox").val('');
-    send(text);
-    e.preventDefault();
-  });
+  $('#inputForm').submit(handleSubmit);
 }
 
+const handleSubmit = function (event) {
+  const text = $("#inputBox").val();
+    $("#inputBox").val('');
+    send(text)
+    event.preventDefault();
+};
+
 const send = function (text) {
-  // TODO: Figure out whether text is JSON. Stringify if not.
-  console.log('send runs.')
   $.ajax({
     method: 'GET',
     url: '/report',
-    data: text,
+    data: { data: text },
     contentType: 'application/json',
     success: (res) => {
       console.log('success!: ', res);
